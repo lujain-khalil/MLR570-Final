@@ -9,7 +9,7 @@ These include written summaries of the lectures. Trying my best to catch anythin
 - [Lecture 4 - SIMILARITY MEASURES](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%204.md) \[Completed :heavy_check_mark:\]
 - [Lecture 5 - MODEL EVALUATION](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%205.md) \[Completed :heavy_check_mark:\]
 - Lecture 6_7_8_9_10 - SUPERVISED LEARNING: 
-    - [Lecture 6 - Linear Methods]() \[Not completed :x:\]
+    - [Lecture 6 - Linear Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%206.md) \[Completed :heavy_check_mark:\]
     - [Lecture 7 - Kernel Methods]() \[Not completed :x:\]
     - [Lecture 8 - k-Nearest Neighbours & Decision Trees]() \[Not completed :x:\]
     - [Lecture 9 - Feed-Forward Neural Networks]() \[Not completed :x:\]
@@ -32,7 +32,7 @@ Just a compilation of the slides posted on iLearn with written comments on them.
 - [Lecture 4 - SIMILARITY MEASURES](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%204.pdf): Pearson Correlation, Euclidean Distance, Manhattan Distance, Cosine Similarity, Jaccard Similarity
 - [Lecture 5 - MODEL EVALUATION](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%205.pdf): Training, Validation, and Testing Dataset, Overfitting and Underfitting, K-fold cross validation, Evaluation Metrics
 - Lecture 6_7_8_9_10 - SUPERVISED LEARNING: 
-    - [Lecture 6 - Linear Methods]()  _(Slides 1-33)_:
+    - [Lecture 6 - Linear Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%206.pdf)  _(Slides 1-33)_:
         - Linear Classification (Perceptrion Algorithm, Linear SVM)
         - Linear Regression (OLS, WLS, Ridge Regression, Lasso Regression)
     - [Lecture 7 - Kernel Methods]() _(Slides 34-47)_: 
@@ -74,4 +74,6 @@ Thanks Alaa.
 - Recording 16 - Soft Clustering, AutoEncoders (whole chapter)
 
 ## Other useful resources 
-- Any video by [StatQuest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw) on YouTube.
+- :tv: Any video by [StatQuest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw) on YouTube.
+- :tv: [SVM (The Math) : Data Science Concepts
+](https://www.youtube.com/watch?v=bM4_AstaBZo&t=512s)
