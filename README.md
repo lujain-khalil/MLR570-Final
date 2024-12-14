@@ -1,5 +1,25 @@
-# MLR570-Final
-Collection of resources for the MLR 570 final exam.
+# MLR570 Final Exam Resources
+This repository compiles resources that could be useful in preparations for the MLR 570 final exam.
+
+## Notes 
+- [Lecture 2 - DATA PREPROCESSING]() \[Not completed :x:\]
+- [Lecture 3 - DATA PREPROCESSING]() \[Not completed :x:\]
+- [Lecture 4 - SIMILARITY MEASURES]() \[Not completed :x:\]
+- [Lecture 5 - MODEL EVALUATION]() \[Not completed :x:\]
+- [Lecture 6_7_8_9_10 - SUPERVISED LEARNING](): 
+    - [Lecture 6 - Linear Methods]() \[Not completed :x:\]
+    - [Lecture 7 - Kernel Methods]() \[Not completed :x:\]
+    - [Lecture 8 - k-Nearest Neighbours & Decision Trees]() \[Not completed :x:\]
+    - [Lecture 9 - Feed-Forward Neural Networks]() \[Not completed :x:\]
+    - [Lecture 10 - Convolutional & Recurrent Neural Networks]() \[Not completed :x:\]
+    - [Lecture 11 - UNSUPERVISED LEARNING]() \[Not completed :x:\]
+- [Lecture 12 - UNSUPERVISED LEARNING]() \[Not completed :x:\]
+- [Lecture 13 - UNSUPERVISED LEARNING]() \[Not completed :x:\]
+
+## Homeworks
+
+- [Homework 1](https://github.com/lujain-khalil/MLR570-Final/tree/main/Homeworks/Homework%201)
+- [Homework 2](https://github.com/lujain-khalil/MLR570-Final/tree/main/Homeworks/Homework%202)
 
 ## Lecture Slides 
 
@@ -29,8 +49,4 @@ Collection of resources for the MLR 570 final exam.
 - [Lecture 12 - UNSUPERVISED LEARNING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2012.pdf): K-Means Clustering, DBSCAN, Soft Clustering
 - [Lecture 13 - UNSUPERVISED LEARNING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2013.pdf): Autoencoders (Vanilla, Denoising, Sparse, Convolutional, Variational)
 
-## Homeworks
-
-- [Homework 1]()
-- [Homework 2]()
-
+## Other useful resources 
