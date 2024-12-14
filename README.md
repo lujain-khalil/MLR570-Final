@@ -2,7 +2,7 @@
 This repository compiles resources that could be useful in preparations for the MLR 570 final exam.
 
 ## Notes 
-- [Lecture 2 - DATA PREPROCESSING]() \[Not completed :x:\]
+- [Lecture 2 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%202.md) \[Completed :heavy_check_mark:\]
 - [Lecture 3 - DATA PREPROCESSING]() \[Not completed :x:\]
 - [Lecture 4 - SIMILARITY MEASURES]() \[Not completed :x:\]
 - [Lecture 5 - MODEL EVALUATION]() \[Not completed :x:\]
