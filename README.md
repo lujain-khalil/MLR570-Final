@@ -6,7 +6,7 @@ These include written summaries of the lectures. Trying my best to catch anythin
 
 - [Lecture 2 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%202.md) \[Completed :heavy_check_mark:\]
 - [Lecture 3 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%203.md) \[Completed :heavy_check_mark:\]
-- [Lecture 4 - SIMILARITY MEASURES]() \[Not completed :x:\]
+- [Lecture 4 - SIMILARITY MEASURES](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%204.md) \[Completed :heavy_check_mark:\]
 - [Lecture 5 - MODEL EVALUATION]() \[Not completed :x:\]
 - [Lecture 6_7_8_9_10 - SUPERVISED LEARNING](): 
     - [Lecture 6 - Linear Methods]() \[Not completed :x:\]
