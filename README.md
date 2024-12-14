@@ -2,8 +2,10 @@
 This repository compiles resources that could be useful in preparations for the MLR 570 final exam.
 
 ## Notes 
+These include written summaries of the lectures. Trying my best to catch anything mentioned in the recording but not the slides. There's also handwritten documents practicing any potential mathematical drivations/problems in [this directory](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Practice).
+
 - [Lecture 2 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%202.md) \[Completed :heavy_check_mark:\]
-- [Lecture 3 - DATA PREPROCESSING]() \[Not completed :x:\]
+- [Lecture 3 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%203.md) \[Completed :heavy_check_mark:\]
 - [Lecture 4 - SIMILARITY MEASURES]() \[Not completed :x:\]
 - [Lecture 5 - MODEL EVALUATION]() \[Not completed :x:\]
 - [Lecture 6_7_8_9_10 - SUPERVISED LEARNING](): 
@@ -12,7 +14,7 @@ This repository compiles resources that could be useful in preparations for the 
     - [Lecture 8 - k-Nearest Neighbours & Decision Trees]() \[Not completed :x:\]
     - [Lecture 9 - Feed-Forward Neural Networks]() \[Not completed :x:\]
     - [Lecture 10 - Convolutional & Recurrent Neural Networks]() \[Not completed :x:\]
-    - [Lecture 11 - UNSUPERVISED LEARNING]() \[Not completed :x:\]
+- [Lecture 11 - UNSUPERVISED LEARNING]() \[Not completed :x:\]
 - [Lecture 12 - UNSUPERVISED LEARNING]() \[Not completed :x:\]
 - [Lecture 13 - UNSUPERVISED LEARNING]() \[Not completed :x:\]
 
@@ -22,6 +24,7 @@ This repository compiles resources that could be useful in preparations for the 
 - [Homework 2](https://github.com/lujain-khalil/MLR570-Final/tree/main/Homeworks/Homework%202)
 
 ## Lecture Slides 
+Just a compilation of the slides posted on iLearn.
 
 - [Lecture 1 - INTRODUCTION](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%201.pdf) 
 - [Lecture 2 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%202.pdf): Aggregation, Sampling, Normalization, Encoding, Discretization
@@ -50,3 +53,4 @@ This repository compiles resources that could be useful in preparations for the 
 - [Lecture 13 - UNSUPERVISED LEARNING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2013.pdf): Autoencoders (Vanilla, Denoising, Sparse, Convolutional, Variational)
 
 ## Other useful resources 
+- Any video by [StatQuest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw) on YouTube.
