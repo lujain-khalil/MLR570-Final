@@ -48,14 +48,11 @@ Data preprocessing involves transforming raw data into a clean and usable format
 - **Techniques**:
   - **Min-Max Normalization**: Scales data to [0, 1].
 
-    $\begin{equation}
-        X_{\text{norm}} = \frac{X - X_{\text{min}}}{X_{\text{max}} - X_{\text{min}}}
-    \end{equation}$
+    $$X_{\text{norm}} = \frac{X - X_{\text{min}}}{X_{\text{max}} - X_{\text{min}}}$$
 
   - **Z-Score Normalization**: Centers data with mean 0 and variance 1.
-    $\begin{equation}
-        X_{\text{norm}} = \frac{X - \mu}{\sigma}
-    \end{equation}$
+
+    $$X_{\text{norm}} = \frac{X - \mu}{\sigma}$$
 
 | Technique              | Advantages                        | Disadvantages                  | When to Use                        |
 |-------------------------|------------------------------------|--------------------------------|------------------------------------|
@@ -88,6 +85,3 @@ Data preprocessing involves transforming raw data into a clean and usable format
   - **Equal-Width Binning**: Divides range into equal-width bins.
   - **Equal-Frequency Binning**: Ensures bins have equal number of data points.
   - **K-Means Binning**: Uses clustering to form bins.
-
-
-# Class recording details
