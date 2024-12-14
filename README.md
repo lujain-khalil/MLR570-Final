@@ -8,13 +8,13 @@ These include written summaries of the lectures. Trying my best to catch anythin
 - [Lecture 3 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%203.md) \[Completed :heavy_check_mark:\]
 - [Lecture 4 - SIMILARITY MEASURES](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%204.md) \[Completed :heavy_check_mark:\]
 - [Lecture 5 - MODEL EVALUATION](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%205.md) \[Completed :heavy_check_mark:\]
-- [Lecture 6_7_8_9_10 - SUPERVISED LEARNING](): 
+- Lecture 6_7_8_9_10 - SUPERVISED LEARNING: 
     - [Lecture 6 - Linear Methods]() \[Not completed :x:\]
     - [Lecture 7 - Kernel Methods]() \[Not completed :x:\]
     - [Lecture 8 - k-Nearest Neighbours & Decision Trees]() \[Not completed :x:\]
     - [Lecture 9 - Feed-Forward Neural Networks]() \[Not completed :x:\]
     - [Lecture 10 - Convolutional & Recurrent Neural Networks]() \[Not completed :x:\]
-- [Lecture 11_12_13 UNSUPERVISED LEARNING]():
+- Lecture 11_12_13 UNSUPERVISED LEARNING:
     - [Lecture 11 - K-Means Clustering, K-Medoids Clustering]() \[Not completed :x:\]
     - [Lecture 12 - K-Means Clustering, DBSCAN, Soft Clustering]() \[Not completed :x:\]
     - [Lecture 13 - Autoencoders]() \[Not completed :x:\]
@@ -31,7 +31,7 @@ Just a compilation of the slides posted on iLearn with written comments on them.
 - [Lecture 3 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%203.pdf): Dimensionality Reduction, Feature Selection, Feature Creation
 - [Lecture 4 - SIMILARITY MEASURES](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%204.pdf): Pearson Correlation, Euclidean Distance, Manhattan Distance, Cosine Similarity, Jaccard Similarity
 - [Lecture 5 - MODEL EVALUATION](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%205.pdf): Training, Validation, and Testing Dataset, Overfitting and Underfitting, K-fold cross validation, Evaluation Metrics
-- [Lecture 6_7_8_9_10 - SUPERVISED LEARNING](): 
+- Lecture 6_7_8_9_10 - SUPERVISED LEARNING: 
     - [Lecture 6 - Linear Methods]()  _(Slides 1-33)_:
         - Linear Classification (Perceptrion Algorithm, Linear SVM)
         - Linear Regression (OLS, WLS, Ridge Regression, Lasso Regression)
@@ -48,10 +48,30 @@ Just a compilation of the slides posted on iLearn with written comments on them.
     - [Lecture 10 - Convolutional & Recurrent Neural Networks]() _(Slides 105-172)_:
         - CNNs (LeNet-5, AlexNet, VGGNet, GoogleNet, ResNet)
         - RNNs (Sequence Applications, Time Steps, Model Parameters and Inputs, Vanishing Gradient Problem)
-- [Lecture 11_12_13 UNSUPERVISED LEARNING]():
+- Lecture 11_12_13 UNSUPERVISED LEARNING:
     - [Lecture 11 - K-Means Clustering, K-Medoids Clustering]()
     - [Lecture 12 - K-Means Clustering, DBSCAN, Soft Clustering]()
     - [Lecture 13 - Autoencoders]()
+
+## Overview of recordings
+Thanks Alaa.
+
+- Recording 1 - Last part of feature selection, Pearson Correlation, Euclidean, - Manhattan
+- Recording 2 - Manhattan, Cosine Similarity, Jaccard Similarity
+- Recording 3 - Model Evaluation
+- Recording 4 - MAE, MSE
+- Recording 5 - Perceptron Algorithm
+- Recording 6 - 13 second accidental recording
+- Recording 7 - SVM, Linear Regression
+- Recording 8 - Intro to non-linear classification
+- Recording 9 - Kernel Functions, Kernel Trick, Kernel Least Square
+- Recording 10 - KNNs, Decision Trees
+- Recording 11 - FNN
+- Recording 12 - CNN, RNN
+- Recording 13 - RNN, Gated RNN
+- Recording 14 - Kmeans Clustering
+- Recording 15 - DBSCAN, Soft Clustering
+- Recording 16 - Soft Clustering, AutoEncoders (whole chapter)
 
 ## Other useful resources 
 - Any video by [StatQuest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw) on YouTube.
