@@ -27,13 +27,14 @@ Let $X \in \mathbb{R}^{n \times d}$ be a dataset with $n$ samples and $d$ featur
    - Let $\mu_j$ be the mean of feature $j$ s.t. $j \in [0, d)$. Then:
 
     $$\mu_j = \frac{1}{n} \sum_{j=0}^{j=d} x_j $$
-
-   - Subtract the mean $\mu_j$ from every $x_j$. Let the matrix $\mu \in \mathbb{R}^{n \times d}$ s.t. every column contains $\mu_j$ for it's respective feature (better understanding of this is given in the works example document [here](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Practice/Lecture%203.md)):
+    
+    - Subtract the mean $\mu_j$ from every $x_j$. Let the matrix $\mu \in \mathbb{R}^{n \times d}$ s.t. every column contains $\mu_j$ for it's respective feature (better understanding of this is given in the works example document [here](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Practice/Lecture%203.md)):
 
    $$X_{\text{center}} = X - \mu$$
 
 2. **Calculate the covariance matrix $\Sigma$**:
     - Let $\Sigma \in \mathbb{R}^{d \times d}$, then:
+
      $$\Sigma = \frac{1}{n-1} X_{\text{center}}^\top X_{\text{center}}$$
 
 
@@ -43,7 +44,9 @@ Let $X \in \mathbb{R}^{n \times d}$ be a dataset with $n$ samples and $d$ featur
      - $v_i$: Eigenvectors (principal components).
      - $\lambda_i$: Eigenvalues (variance explained by each component).
     - To put it very briefly, solve for the eigenvalues $\lambda$ by solving:
+
     $$det(\Sigma - \lambda I) = 0$$
+    
     - Finding the actual eigenvectors $v$ is a very long linear algebra problem so it's not worth going over it, but it works.
 
 3. **Projection**:
@@ -65,20 +68,31 @@ We can look at PCA from two different perspectives:
 1. **Maximizing Variance**:
     - Maximizing the variance of the projected data $Y$
     - Deriving $Var(Y)$:
+
     $$Var(Y) = \frac{1}{n-1} Y^{\top} Y$$
+
     $$Var(Y) = \frac{1}{n-1} W_k^{\top} X_{\text{center}}^{\top} X_{\text{center}} W_k$$
+    
     $$Var(Y) = W_k^{\top} \Sigma W_k$$
+    
     - The objective would be as follows:
+    
     $$\max_W \text{tr}(W_k^\top \Sigma W_k)$$
 
 2. **Minimizing Reconstruction Error**:
     - This is just a fancy way to say minimizing the Frobenius norm of the difference between original data and it's reconstruction.
     - Using $W_k$ to reconstruct $Y$ back to it's original dimension ($X_{\text{reconstruct}} \in \mathbb{R}^{n \times d}$):
+    
     $$X_{\text{reconstruct}} = Y W_k^{\top}$$
+    
     $$X_{\text{reconstruct}} = X_{\text{center}} W_k W_k^{\top}$$
+    
     - The objective function would be:
+    
     $$\min_W \| X_{\text{center}} - X_{\text{center}} W_k W_k^\top \|_F^2$$
+    
     - Expanding this, we would get:
+    
     $$\min_W \text{tr}(X_{\text{center}}^{\top} X_{\text{center}}) - 2 \text{tr}(W_k^{\top} X_{\text{center}}^{\top} X_{\text{center}} W_k) + \text{tr}(W_k^{\top} X_{\text{center}}^{\top} X_{\text{center}} W_k W_k^{\top} W_k)$$
 
 ### **Choosing Number of Components**:
@@ -99,16 +113,23 @@ Selects the most relevant features to improve model performance and reduce dimen
 - **Variance Threshold**:
     - Removes features with low variance.
     - For a feature column $X_j \in \mathbb{R}^{n}$:
+     
      $$\text{Var}(X_j) = \frac{1}{n} \sum_{i=1}^{n} (x_{ij} - \mu_j)^2$$
+
 - **Pearson's Correlation Coefficient**:
     - Measures linear relationship between a feature and the target.
     - For a feature $X_j$ and target $y$:
+    
     $$\rho(X_j, y) = \frac{\text{Cov}(X_j, y)}{\sigma_{X_j} \sigma_y}$$
+    
     - Higher magniture of $\rho$ indicates strong linear relationship. Sign implies direction of relationship.
+
 - **Mutual Information**:
     - Captures both linear and non-linear dependencies.
     - For a feature $X_j$ and target $y$:
+    
     $$I(X_j; y) = \sum_{X, Y} p(x, y) \log \frac{p(x, y)}{p(x)p(y)}$$
+    
     - Higher MI indicated stronger relationship.
 
 ### **Wrapper Methods**:
@@ -121,5 +142,7 @@ Selects the most relevant features to improve model performance and reduce dimen
 - Feature selection during the model training process.
 - **Lasso Regression (L1 Regularization)**:
     - Adds an $L_1$ penalty to force some feature coefficients to zero:
+    
     $$\min_w \frac{1}{2n} \| Xw - y \|_2^2 + \lambda \| w \|_1$$
+    
     - Regularization paramter $\lambda$ indicated strength of regularization.
