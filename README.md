@@ -7,7 +7,7 @@ These include written summaries of the lectures. Trying my best to catch anythin
 - [Lecture 2 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%202.md) \[Completed :heavy_check_mark:\]
 - [Lecture 3 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%203.md) \[Completed :heavy_check_mark:\]
 - [Lecture 4 - SIMILARITY MEASURES](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%204.md) \[Completed :heavy_check_mark:\]
-- [Lecture 5 - MODEL EVALUATION]() \[Not completed :x:\]
+- [Lecture 5 - MODEL EVALUATION](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%205.md) \[Completed :heavy_check_mark:\]
 - [Lecture 6_7_8_9_10 - SUPERVISED LEARNING](): 
     - [Lecture 6 - Linear Methods]() \[Not completed :x:\]
     - [Lecture 7 - Kernel Methods]() \[Not completed :x:\]
@@ -24,7 +24,7 @@ These include written summaries of the lectures. Trying my best to catch anythin
 - [Homework 2](https://github.com/lujain-khalil/MLR570-Final/tree/main/Homeworks/Homework%202)
 
 ## Lecture Slides 
-Just a compilation of the slides posted on iLearn.
+Just a compilation of the slides posted on iLearn with written comments on them.
 
 - [Lecture 1 - INTRODUCTION](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%201.pdf) 
 - [Lecture 2 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%202.pdf): Aggregation, Sampling, Normalization, Encoding, Discretization
