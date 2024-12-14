@@ -48,11 +48,11 @@ Data preprocessing involves transforming raw data into a clean and usable format
 - **Techniques**:
   - **Min-Max Normalization**: Scales data to [0, 1].
 
-    $$X_{\text{norm}} = \frac{X - X_{\text{min}}}{X_{\text{max}} - X_{\text{min}}}$$
+$$X_{\text{norm}} = \frac{X - X_{\text{min}}}{X_{\text{max}} - X_{\text{min}}}$$
 
   - **Z-Score Normalization**: Centers data with mean 0 and variance 1.
 
-    $$X_{\text{norm}} = \frac{X - \mu}{\sigma}$$
+$$X_{\text{norm}} = \frac{X - \mu}{\sigma}$$
 
 | Technique              | Advantages                        | Disadvantages                  | When to Use                        |
 |-------------------------|------------------------------------|--------------------------------|------------------------------------|
