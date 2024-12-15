@@ -39,7 +39,7 @@ Common kernels compute this efficiently without explicitly calculating $\phi(x)$
 ### **1. Polynomial Kernel**
 Maps data into a higher $d$-dimensional space using polynomial terms. Polynomial kernels are suitable for data with interactions between features. The mapping function $\phi : \mathbb{R}^{n} \rightarrow \mathbb{R}^{d}$ s.t. $d > n$ is defined as follows:
 
-$$\phi(x) = \left[\frac{\sqrt{d!}}{\sqrt{j_1! j_2! \dots j_{n+1}!}} x_1^{j_1} \dots x_n^{j_n} 1^{j_{n+1}} \right]_{j_1 + j_2 + \dots + j_{n+1} = d}$$
+$$\phi(x) = {\left[\frac{\sqrt{d!}}{\sqrt{j_1! j_2! \dots j_{n+1}!}} x_1^{j_1} \dots x_n^{j_n} 1^{j_{n+1}} \right]}_{j_1 + j_2 + \dots + j_{n+1} = d}$$
 
 The equation above is used to compute each term in the polynomial, where each term used a different combination of $j$'s that satsify the constraint $\sum_{i = 1}^{n+1} j_i = d$
 
