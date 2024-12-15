@@ -54,7 +54,7 @@ Just a compilation of the slides posted on iLearn with written comments on them.
     - [Lecture 13 - Autoencoders]()
 
 ## Overview of recordings
-Thanks Alaa.
+Thanks Alaa <3
 
 - Recording 1 - Last part of feature selection, Pearson Correlation, Euclidean, - Manhattan
 - Recording 2 - Manhattan, Cosine Similarity, Jaccard Similarity
@@ -73,11 +73,13 @@ Thanks Alaa.
 - Recording 15 - DBSCAN, Soft Clustering
 - Recording 16 - Soft Clustering, AutoEncoders (whole chapter)
 
-Topics covered thoroughly in recordings but not slides:
+Topics covered thoroughly in recordings but not so much in the slides:
 
 - Lecture 6: Normal equation derivations for OLS, WLS, and Ridge Regression
 
-## Other useful resources 
+## Other resources 
 - :tv: Any video by [StatQuest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw) on YouTube.
 - :tv: [SVM (The Math) : Data Science Concepts
 ](https://www.youtube.com/watch?v=bM4_AstaBZo&t=512s)
+- :page_with_curl: [Dara's Full Notes](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Dara-Full$20Notes.pdf) (being updated as we go).
+- :page_with_curl: [Raghad's Notes on Polynomial Kernels](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Raghad-Polynomial$20Functions.pdf).
