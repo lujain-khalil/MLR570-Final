@@ -82,4 +82,4 @@ Topics covered thoroughly in recordings but not so much in the slides:
 - :tv: [SVM (The Math) : Data Science Concepts
 ](https://www.youtube.com/watch?v=bM4_AstaBZo&t=512s)
 - :page_with_curl: [Dara's Full Notes](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Dara-Full$20Notes.pdf) (being updated as we go).
-- :page_with_curl: [Raghad's Notes on Polynomial Kernels](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Raghad-Polynomial$20Functions.pdf).
+- :page_with_curl: [Raghad's Notes on Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Raghad-Kernel$20Methods.pdf).
