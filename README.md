@@ -25,7 +25,7 @@ These include written summaries of the lectures. Trying my best to catch anythin
 - [Homework 2](https://github.com/lujain-khalil/MLR570-Final/tree/main/Homeworks/Homework%202)
 
 ## Lecture Slides 
-Just a compilation of the slides posted on iLearn with written comments on them.
+Just a compilation of the slides posted on iLearn with my (minimal) written comments on them.
 
 - [Lecture 2 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%202.pdf): Aggregation, Sampling, Normalization, Encoding, Discretization
 - [Lecture 3 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%203.pdf): Dimensionality Reduction, Feature Selection, Feature Creation
@@ -75,11 +75,18 @@ Thanks Alaa <3
 
 Topics covered thoroughly in recordings but not so much in the slides:
 
-- Lecture 6: Normal equation derivations for OLS, WLS, and Ridge Regression
+- Recording 7 (Lecture 6): Normal equation derivations (OLS, WLS, and Ridge Regression)
+- Recording 9 (Lecture 7): Kernel function derivations (Polynomial, RBF, and Least Squares)
+- Recording 13 (Lecture 10): Gated RNN derivations
+- Recordings 15/16 (Lecture 12): Soft clustering derivations
 
 ## Other resources 
+
+:tv: **Videos**:
 - :tv: Any video by [StatQuest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw) on YouTube.
 - :tv: [SVM (The Math) : Data Science Concepts
 ](https://www.youtube.com/watch?v=bM4_AstaBZo&t=512s)
-- :page_with_curl: [Dara's Full Notes](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Dara-Full$20Notes.pdf) (being updated as we go).
-- :page_with_curl: [Raghad's Notes on Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Raghad-Kernel$20Methods.pdf).
+
+:page_with_curl: **Other notes**
+- [Dara's Full Notes](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Dara-Full$20Notes.pdf) (being updated as we go)
+- [Raghad's Notes on Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Raghad-Kernel$20Methods.pdf)
