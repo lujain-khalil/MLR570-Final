@@ -112,9 +112,9 @@ $$X_{\text{reconstruct}} = X_{\text{center}} W_k W_k^{\top}$$
     
 The objective function would be:
     
-$$\min_W \| X_{\text{center}} - X_{\text{center}} W_k W_k^\top \|_F^2$$
+$$\min_W \|X_{\text{center}} - X_{\text{center}} W_k W_k^\top\|_F^2$$
     
-- Expanding this, we would get:
+Expanding this, we would get:
     
 $$\min_W \text{tr}(X_{\text{center}}^{\top} X_{\text{center}}) - 2 \text{tr}(W_k^{\top} X_{\text{center}}^{\top} X_{\text{center}} W_k) + \text{tr}(W_k^{\top} X_{\text{center}}^{\top} X_{\text{center}} W_k W_k^{\top} W_k)$$
 
