@@ -92,5 +92,5 @@ Topics covered thoroughly in recordings but not so much in the slides:
     - [Radial Basis Function Kernel : Data Science Concepts](https://www.youtube.com/watch?v=Q0ExqOphnW0)
 
 :page_with_curl: **Other notes**
-- [Dara's Notes](https://drive.google.com/file/d/1lKLm_Ub06MJRl5GnLcMH_ISQhFt_Qmzq/view?usp=sharing)
+- [Dara's Notes](https://drive.google.com/file/d/1FJQ-zpX7paiL3XkXQ5pc9BLWV9XuwgtD/view?usp=sharing)
 - [Raghad's Notes on Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Raghad-Kernel$20Methods.pdf)
