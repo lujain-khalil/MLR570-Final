@@ -14,7 +14,7 @@ Transforms high-dimensional data into a lower-dimensional space to improve inter
 - **UMAP**: Similar to t-SNE but faster and scalable.
 - **Random Projection**: Projects data randomly to reduce dimensions.
 
-> **Note:_**  Only PCA is discussed in this lecture.
+> **_Note:_**  Only PCA is discussed in this lecture.
 
 ### **Principal Component Analysis (PCA)**
 
