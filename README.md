@@ -10,10 +10,10 @@ These include written summaries of the lectures. Trying my best to catch anythin
 - [Lecture 5 - MODEL EVALUATION](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%205.md) \[Completed :heavy_check_mark:\]
 - Lecture 6_7_8_9_10 - SUPERVISED LEARNING: 
     - [Lecture 6 - Linear Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%206.md) \[Completed :heavy_check_mark:\]
-    - [Lecture 7 - Kernel Methods]() \[Not completed :x:\]
-    - [Lecture 8 - k-Nearest Neighbours & Decision Trees]() \[Not completed :x:\]
-    - [Lecture 9 - Feed-Forward Neural Networks]() \[Not completed :x:\]
-    - [Lecture 10 - Convolutional & Recurrent Neural Networks]() \[Not completed :x:\]
+    - [Lecture 7 - Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%207.md) \[Completed :heavy_check_mark:\]
+    - [Lecture 8 - k-Nearest Neighbours & Decision Trees](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%208.md) \[Not completed :x:\]
+    - [Lecture 9 - Feed-Forward Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%209.md) \[Not completed :x:\]
+    - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2010.md) \[Not completed :x:\]
 - Lecture 11_12_13 UNSUPERVISED LEARNING:
     - [Lecture 11 - K-Means Clustering, K-Medoids Clustering]() \[Not completed :x:\]
     - [Lecture 12 - K-Means Clustering, DBSCAN, Soft Clustering]() \[Not completed :x:\]
@@ -35,17 +35,17 @@ Just a compilation of the slides posted on iLearn with my (minimal) written comm
     - [Lecture 6 - Linear Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%206.pdf)  _(Slides 1-33)_:
         - Linear Classification (Perceptrion Algorithm, Linear SVM)
         - Linear Regression (OLS, WLS, Ridge Regression, Lasso Regression)
-    - [Lecture 7 - Kernel Methods]() _(Slides 34-47)_: 
+    - [Lecture 7 - Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%207.pdf) _(Slides 34-47)_: 
         - Polynomial Kernel
         - Kernel Least Squares 
-    - [Lecture 8 - k-Nearest Neighbours & Decision Trees]() _(Slides 48-74)_: 
+    - [Lecture 8 - k-Nearest Neighbours & Decision Trees](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%208.pdf) _(Slides 48-74)_: 
         - k-NN (Classification, Regression)
         - Decision Trees (Information Gain, Gini Index, Tsallis Entropy, Pruning) 
-    - [Lecture 9 - Feed-Forward Neural Networks]() _(Slides 75-104)_: 
+    - [Lecture 9 - Feed-Forward Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%209.pdf) _(Slides 75-104)_: 
         - Forward Propagation (Classification, Regression, Activation Functions)
         - Back Propagation (Regression)
         - Weight Initialization
-    - [Lecture 10 - Convolutional & Recurrent Neural Networks]() _(Slides 105-172)_:
+    - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2010.pdf) _(Slides 105-172)_:
         - CNNs (LeNet-5, AlexNet, VGGNet, GoogleNet, ResNet)
         - RNNs (Sequence Applications, Time Steps, Model Parameters and Inputs, Vanishing Gradient Problem)
 - Lecture 11_12_13 UNSUPERVISED LEARNING:
@@ -83,9 +83,12 @@ Topics covered thoroughly in recordings but not so much in the slides:
 ## Other resources 
 
 :tv: **Videos**:
-- :tv: Any video by [StatQuest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw) on YouTube.
-- :tv: [SVM (The Math) : Data Science Concepts
-](https://www.youtube.com/watch?v=bM4_AstaBZo&t=512s)
+- Any video by [StatQuest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw) on YouTube
+- [ritvikmath](https://www.youtube.com/@ritvikmath) on Youtube is also good
+    - [SVM (The Math) : Data Science Concepts
+    ](https://www.youtube.com/watch?v=bM4_AstaBZo&t=512s)
+    - [SVM Kernels : Data Science Concepts](https://www.youtube.com/watch?v=OKFMZQyDROI&t=0s)
+    - [Radial Basis Function Kernel : Data Science Concepts](https://www.youtube.com/watch?v=Q0ExqOphnW0)
 
 :page_with_curl: **Other notes**
 - [Dara's Full Notes](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Dara-Full$20Notes.pdf) (being updated as we go)
