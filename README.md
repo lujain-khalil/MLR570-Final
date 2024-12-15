@@ -11,7 +11,7 @@ These include written summaries of the lectures. Trying my best to catch anythin
 - Lecture 6_7_8_9_10 - SUPERVISED LEARNING: 
     - [Lecture 6 - Linear Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%206.md) \[Completed :heavy_check_mark:\]
     - [Lecture 7 - Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%207.md) \[Completed :heavy_check_mark:\]
-    - [Lecture 8 - k-Nearest Neighbours & Decision Trees](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%208.md) \[Not completed :x:\]
+    - [Lecture 8 - k-Nearest Neighbours & Decision Trees](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%208.md) \[Completed :heavy_check_mark:\]
     - [Lecture 9 - Feed-Forward Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%209.md) \[Not completed :x:\]
     - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2010.md) \[Not completed :x:\]
 - Lecture 11_12_13 UNSUPERVISED LEARNING:
@@ -37,6 +37,7 @@ Just a compilation of the slides posted on iLearn with my (minimal) written comm
         - Linear Regression (OLS, WLS, Ridge Regression, Lasso Regression)
     - [Lecture 7 - Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%207.pdf) _(Slides 34-47)_: 
         - Polynomial Kernel
+        - RBF Kernel
         - Kernel Least Squares 
     - [Lecture 8 - k-Nearest Neighbours & Decision Trees](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%208.pdf) _(Slides 48-74)_: 
         - k-NN (Classification, Regression)

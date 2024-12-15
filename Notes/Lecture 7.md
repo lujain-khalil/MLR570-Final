@@ -98,7 +98,7 @@ $$\beta = (\phi(X)^{\top} \phi(X) + \lambda I)^{-1} \phi(X)^{\top} y$$
 ## Summary
 
 | **Method**          | **Kernel Function**                                  | **Feature Space**       |
-|       -|                 --|        -|
+|       ---|                 ---|        ---|
 | **Polynomial Kernel**|  $K(x, z) = (x \cdot z + 1)^d$                  | Finite-dimensional      |
 | **RBF Kernel**       |  $K(x, z) = \text{exp}(-\gamma \|\|x - z\|\|^2)$  | Infinite-dimensional    |
 
