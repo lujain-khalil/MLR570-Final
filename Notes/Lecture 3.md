@@ -39,8 +39,6 @@ $$\begin{align*}
 
 $$X_{\text{center}} = X - \mu$$
 
-$$$$
-
 2. **Calculate the covariance matrix**
 
 The covariance matrix $\Sigma \in \mathbb{R}^{d \times d}$ is defined as follows:
