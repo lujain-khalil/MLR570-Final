@@ -1,9 +1,6 @@
 # Lecture 6: Linear Methods
 
-
-Supervised learning involves learning a mapping function $f: X \to Y$, where $X$ are input features and $Y$ are output labels. 
-
-A dataset is **linearly separable** if there exists a hyperplane such that, given a single datapoint $x$:
+Supervised learning involves learning a mapping function $f: X \to Y$, where $X$ are input features and $Y$ are output labels. A dataset is **linearly separable** if there exists a hyperplane such that, given a single datapoint $x$:
   
 $$w \cdot x + b = 0$$
   
@@ -27,7 +24,7 @@ $$L(w, b) = \text{max}(0, -y_i (w \cdot x_i + b))$$
 
 Deriving $L(w, b)$ w.r.t $w$ and $b$:
 
-$$\frac{\partial L}{\partial w} = \begin{cases} -y_i x_i & \text{if } y_i (w \cdot x_i + b) \leq 0 \\0 & \text{otherwise} \end{cases}$$
+$$\frac{\partial L}{\partial w} = \begin{cases} -y_i x_i & \text{if } y_i (w \cdot x_i + b) \leq 0 \\ 0 & \text{otherwise} \end{cases}$$
 
 $$\frac{\partial L}{\partial b} = \begin{cases} -y_i & \text{if } y_i (w \cdot x_i + b) \leq 0 \\ 0 & \text{otherwise} \end{cases}$$
 
@@ -61,11 +58,11 @@ $$y_i (w \cdot x_i + b) \geq 1, \, \forall i$$
 
 The distance from any point $x$ to the hyperplane/decision boundary is given as:
 
-$$d = \frac{|w \cdot x + b|}{||w||}$$
+$$d = \frac{|w \cdot x + b|}{\|w\|}$$
 
 Since we're defining the margin to be one unit away on either side of the boundary, our margin width is defined as:
 
-$$\text{Margin Width} = 2 \times \frac{1}{||w||} = \frac{2}{||w||}$$
+$$\text{Margin Width} = 2 \times \frac{1}{\|w\|} = \frac{2}{\|w\|}$$
 
 The goal for SVM's is to minimize margin width w.r.t $w$. In other words, the pptimization problem is formulated as:
 
@@ -100,6 +97,7 @@ Tada. As usual, mroe detailed hand-written walkthrough can be found [here](https
 
 
 ## **3. Linear Regression**
+
 ### **Ordinary Least Squares (OLS)**
 - Models relationship between input $X$ and target $y$:
 

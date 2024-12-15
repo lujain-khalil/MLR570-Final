@@ -7,60 +7,48 @@
 Key similarity and distance measures include:
 
 ## **1. Pearson Correlation**
-- **Definition**: Measures the linear relationship between two variables.
-- **Formula**:
+Measures the linear relationship between two variables:
 
-  $$ \rho(A, B) = \frac{\text{cov}(A, B)}{\sigma_A \sigma_B} $$
+$$ \rho(A, B) = \frac{\text{cov}(A, B)}{\sigma_A \sigma_B} $$
 
-  - $ \text{cov}(A, B) $: Covariance of $ A $ and $ B $.
-  - $ \sigma_A, \sigma_B $: Standard deviations of $ A $ and $ B $.
-- **Applications**:
-  - Feature selection.
-  - Linear regression.
+- $\text{cov}(A, B)$: Covariance of $ A $ and $ B $.
+- $\sigma_A, \sigma_B $: Standard deviations of $ A $ and $ B $.
+
+**Applications**: Feature selection and linear regression.
 
 
 ## **2. Euclidean Distance**
-- **Definition**: The straight-line distance between two points in Euclidean space.
-- **Formula**:
+The straight-line distance between two points in Euclidean space:
 
-  $$ d(A, B) = \sqrt{\sum_{i=1}^n (A_i - B_i)^2} $$
+$$ d(A, B) = \sqrt{\sum_{i=1}^n (A_i - B_i)^2} $$
 
-- **Applications**:
-  - K-means clustering.
-  - Nearest-neighbor algorithms.
+**Applications**: K-means clustering and Nearest-neighbor algorithms.
 
 ## **3. Manhattan Distance**
-- **Definition**: The sum of the absolute differences between the coordinates of two points.
-- **Formula**:
+The sum of the absolute differences between the coordinates of two points:
 
-  $$ d(A, B) = \sum_{i=1}^n |A_i - B_i| $$
+$$ d(A, B) = \sum_{i=1}^n |A_i - B_i| $$
 
-- **Key Points**:
-  - Measures grid-like distance (e.g., city blocks).
-  - More robust to outliers and effective in high-dimensional spaces.
+- Measures grid-like distance (e.g., city blocks).
+- More robust to outliers and effective in high-dimensional spaces.
 
 
 ## **4. Cosine Similarity**
-- **Definition**: Measures the cosine of the angle between two vectors, focusing on direction rather than magnitude.
+Measures the cosine of the angle between two vectors, focusing on direction rather than magnitude:
 
-- **Formula**:
-
-  $$ \text{Cosine Similarity} = \frac{A \cdot B}{\|A\| \|B\|} $$
+$$ \text{Cosine Similarity} = \frac{A \cdot B}{\|A\| \|B\|} $$
   
-  - $ A \cdot B $: Dot product of $ A $ and $ B $.
-  - $ \|A\|, \|B\| $: Magnitudes of $ A $ and $ B $.
+- $A \cdot B$: Dot product of $A$ and $B$.
+- $\|A\|, \|B\|$: Magnitudes of $A$ and $B$.
 
-- **Applications**:
-  - Text mining.
-  - Recommendation systems.
+**Applications**: Text mining and recommendation systems.
 
 ## **5. Jaccard Similarity**
-- **Definition**: Measures the overlap between two sets.
-- **Formula**:
-  $$ \text{Jaccard Similarity} = \frac{|A \cap B|}{|A \cup B|} $$
-- **Applications**:
-  - Comparing binary or categorical data.
-  - Document similarity in text mining.
+Measures the overlap between two sets:
+
+$$ \text{Jaccard Similarity} = \frac{|A \cap B|}{|A \cup B|} $$
+
+**Applications**: Comparing binary or categorical data and document similarity in text mining.
 
 
 ## **Comparison of Measures**

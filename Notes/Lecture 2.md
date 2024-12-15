@@ -10,14 +10,13 @@ Data preprocessing involves transforming raw data into a clean and usable format
 
 ## **1. Aggregation**
 
-- **Definition**: Summarizing or combining data points to reduce size and complexity.
+Summarizing or combining data points to reduce size and complexity. Common techniques include:
 
-- **Common Techniques**:
-  - **Sum Aggregation**: Calculates the sum of values within a group.
-  - **Mean Aggregation**: Computes the average value.
-  - **Median Aggregation**: Finds the median value, robust to outliers.
-  - **Windowed Aggregation**: Aggregates over a specific time window.
-  - **Spatial Aggregation**: Combines geographically close data points (e.g., population density).
+- **Sum Aggregation**: Calculates the sum of values within a group.
+- **Mean Aggregation**: Computes the average value.
+- **Median Aggregation**: Finds the median value, robust to outliers.
+- **Windowed Aggregation**: Aggregates over a specific time window.
+- **Spatial Aggregation**: Combines geographically close data points (e.g., population density).
 
 | Technique              | Advantages                        | Disadvantages                  | When to Use                        |
 |-------------------------|------------------------------------|--------------------------------|------------------------------------|
@@ -28,12 +27,12 @@ Data preprocessing involves transforming raw data into a clean and usable format
 
 ## **2. Sampling**
 
-- **Definition**: Selecting a subset of data to reduce size while maintaining representation.
-- **Common Techniques**:
-  - **Random Sampling**: Selects instances randomly.
-  - **Stratified Sampling**: Proportional representation of groups/classes.
-  - **Oversampling/Undersampling**: Balances imbalanced datasets by replicating or reducing samples.
-  - **Systematic Sampling**: Selects data at regular intervals.
+Selecting a subset of data to reduce size while maintaining representation. Common techniques include:
+
+- **Random Sampling**: Selects instances randomly.
+- **Stratified Sampling**: Proportional representation of groups/classes.
+- **Oversampling/Undersampling**: Balances imbalanced datasets by replicating or reducing samples.
+- **Systematic Sampling**: Selects data at regular intervals.
 
 | Technique              | Advantages                        | Disadvantages                  | When to Use                        |
 |-------------------------|------------------------------------|--------------------------------|------------------------------------|
@@ -44,13 +43,12 @@ Data preprocessing involves transforming raw data into a clean and usable format
 
 ## **3. Normalization**
 
-- **Definition**: Scaling numerical data to fit within a specific range.
-- **Techniques**:
-  - **Min-Max Normalization**: Scales data to [0, 1].
+Scaling numerical data to fit within a specific range. Common techniques include:
+- **Min-Max Normalization**: Scales data to [0, 1].
 
 $$X_{\text{norm}} = \frac{X - X_{\text{min}}}{X_{\text{max}} - X_{\text{min}}}$$
 
-  - **Z-Score Normalization**: Centers data with mean 0 and variance 1.
+- **Z-Score Normalization**: Centers data with mean 0 and variance 1.
 
 $$X_{\text{norm}} = \frac{X - \mu}{\sigma}$$
 
@@ -62,12 +60,12 @@ $$X_{\text{norm}} = \frac{X - \mu}{\sigma}$$
 
 ## **4. Encoding**
 
-- **Definition**: Converting categorical data into numerical format.
-- **Techniques**:
-  - **Label Encoding**: Assigns integer values to categories.
-  - **One-Hot Encoding**: Creates binary columns for each category. 
-  - **Frequency Encoding**: Replaces categories with their frequency.
-  - **Binary Encoding**: Converts categories to binary digits.
+Converting categorical data into numerical format. Common techniques include:
+
+- **Label Encoding**: Assigns integer values to categories.
+- **One-Hot Encoding**: Creates binary columns for each category. 
+- **Frequency Encoding**: Replaces categories with their frequency.
+- **Binary Encoding**: Converts categories to binary digits.
 
 > **_Example:_**  For a feature with 8 categories, one-hot encoding would create 8 new columns. Binary encoding would only introduce 3 new columns ($8 = 2^3$).
 
@@ -80,8 +78,7 @@ $$X_{\text{norm}} = \frac{X - \mu}{\sigma}$$
 
 ## **5. Discretization**
 
-- **Definition**: Converts continuous features into discrete bins.
-- **Techniques**:
-  - **Equal-Width Binning**: Divides range into equal-width bins.
-  - **Equal-Frequency Binning**: Ensures bins have equal number of data points.
-  - **K-Means Binning**: Uses clustering to form bins.
+Converts continuous features into discrete bins. Common techniques include:
+- **Equal-Width Binning**: Divides range into equal-width bins.
+- **Equal-Frequency Binning**: Ensures bins have equal number of data points.
+- **K-Means Binning**: Uses clustering to form bins.
