@@ -13,7 +13,7 @@ These include written summaries of the lectures. Trying my best to catch anythin
     - [Lecture 7 - Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%207.md) \[Completed :heavy_check_mark:\]
     - [Lecture 8 - k-Nearest Neighbours & Decision Trees](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%208.md) \[Completed :heavy_check_mark:\]
     - [Lecture 9 - Feed-Forward Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%209.md) \[Completed :heavy_check_mark:\]
-    - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2010.md) \[Not completed :x:\]
+    - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2010.md) \\[Completed :heavy_check_mark: _Typed out notes still missing RNNs_\]
 - Lecture 11_12_13 UNSUPERVISED LEARNING:
     - [Lecture 11 - K-Means Clustering, K-Medoids Clustering]() \[Not completed :x:\]
     - [Lecture 12 - K-Means Clustering, DBSCAN, Soft Clustering]() \[Not completed :x:\]

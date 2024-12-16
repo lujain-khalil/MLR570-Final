@@ -139,6 +139,8 @@ where:
 
 ### **Vanishing/Exploding Gradient Problem**
 
+> _Incomplete dervations_
+
 Let's derive the gradient that will be used to update $W_h$. Given a loss function $L(y, \hat{y})$, gradients of the loss function $L$ are backpropagated through time:
 
 $$\frac{\partial L}{\partial W_h} = \sum_{t=1}^T \frac{\partial L}{\partial h_t} \cdot \frac{\partial h_t}{\partial W_h}$$
@@ -166,11 +168,13 @@ Using **$h_t = tanh(W_h h_{t-1} + W_x x_t + b)$:**
 
 
 ### **Gated Recurrent Units (GRUs): Solving Vanishing Gradient**
+> _Incomplete dervations_
+
 GRUs introduce **gates** to control the flow of information:
 - **Update Gate** ($z_t$): Controls how much of the past information is carried forward.
 - **Reset Gate** ($r_t$): Controls how much of the past hidden state to forget.
 
-### **GRU Equations**
+**GRU Equations**
 1. Update gate:
    $$
    z_t = \sigma(W_z x_t + U_z h_{t-1} + b_z)
@@ -188,22 +192,11 @@ GRUs introduce **gates** to control the flow of information:
    h_t = z_t \odot h_{t-1} + (1 - z_t) \odot \tilde{h}_t
    $$
 
-### **Why GRUs Solve Vanishing Gradients**
+**Why GRUs Solve Vanishing Gradients**
 - The **update gate** $z_t$ selectively carries forward long-term information.
 - Gradients flow through $z_t$, preventing exponential shrinking.
 
----
 
-## **6. Key Differences Between RNNs and GRUs**
-| Feature              | RNN                            | GRU                                  |
-|----------------------|--------------------------------|--------------------------------------|
-| **Hidden State**     | $h_t = f(W_h h_{t-1} + \dots)$ | Combines candidate state $\tilde{h}_t$ and $h_{t-1}$. |
-| **Vanishing Gradient**| Present                       | Mitigated by gating mechanisms.      |
-| **Parameters**       | Fewer                         | More due to update/reset gates.      |
-| **Performance**      | Struggles with long sequences | Better for long-term dependencies.   |
-
----
-
-## **7. Summary**
+In summary: 
 - **RNNs** process sequential data using hidden states but face vanishing/exploding gradients due to recursive computations.
 - **GRUs** solve these issues with update/reset gates, allowing selective memory retention and better gradient flow.
