@@ -1,7 +1,7 @@
 # Lecture 8: k-Nearest Neighbors (k-NNs) and Decision Trees
 
 
-## 1. k-Nearest Neighbors (k-NN)
+## k-Nearest Neighbors (k-NNs)
 
 - **Non-parametric** and **instance-based** algorithm.
 - Predictions rely on distances to stored training examples.
@@ -55,7 +55,7 @@ The denominator $\sum_{i=1}^k w_i$ is to scale the weights.
 | **Class Imbalance**            | Distance-weighted voting.     |
 
 
-## 2. Decision Trees
+## Decision Trees
 
 - Simple, interpretable model for **supervised classification**.
 - A tree is built using:

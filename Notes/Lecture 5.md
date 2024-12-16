@@ -1,4 +1,4 @@
-# Lecture 5 Summary: Model Evaluation
+# Lecture 5 Model Evaluation
 
 ## Training, Validation, and Testing
 
