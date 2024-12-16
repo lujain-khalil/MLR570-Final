@@ -66,19 +66,35 @@ $$
 
 ### Inception module
 
-Used in **GoogleNet**, the inception module is **computationally efficient** due to it's parallel CNN structure. It be explained by the following example (using Same Convolutions for the sake of simplicity):
+- Introduced in **GoogleNet**
+- Addresses the challenge of choosing the right filter size
+- Combines multiple filter sizes and pooling operations in parallel within a single layer
+- The inception module achieves the following:
+   - **Multi-scale Feature Extraction**: Different filter sizes capture features at different scalesComputationally efficient. Pooling ensures spatial information is retained
+   - **Parameter Efficiency**: The use of 1x1 convolutions reduces the number of channels before applying larger filters, making it _computationally efficient_
+   - **Improved learning**: By combining outputs from different operations, the network learns richer features.
+
+The inception module can be explained by the following example (using Same Convolutions for the sake of simplicity):
+
+![Inception module](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Figures/inception-module.png)
 
 - **Input features** of size $28 \times 28 \times 196$ (i.e. $196$ channels)
 - **Parallel convolutions** of size $28 \times 28 \times C_i$, where $C_i$ is the size of subset of channels used in branch $i$. A pooling layer would take all the channels ($28 \times 28 \times 196$)
 - **Filter Concatentation**: $28 \times 28 \times \sum_{i=0}^B C_i$, where $B$ is the number of branches. This final layer just concatenates the outputs of all parallel convolution branches
 
-![Inception module](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Figures/inception-module.png)
+### Skip Connection
 
-### Skip Connections
+- Introduced in **ResNet**
+- Addresses the challenge of vanishing gradients
+- Uses short-circuit connections that bypass one or more layers by adding the input of a layer directly to its output
+- Skip connections achieves the following:
+   - **Solves Vanishing Gradient Problem**: In very deep networks, gradients become very small (vanish) as they backpropagate through many layers. Skip connections provide an identity shortcut that allows gradients to flow directly through the network
+   - **Learn Residuals**: Instead of learning the full mapping $H(x)$,the network learns a _residual function_ $F(x) = H(x) - x$
+   - **Improved Training**: Enables the training of very deep architectures (e.g., ResNet-152) without degradation in performance
 
-Used in **ResNet**, skip connections allow deeper networks to perform better during training. Here's a visual example that uses ReLU as the activation function, where $f(z) = \max(0, z)$:
+Here's a visual example that uses ReLU as the activation function $f(z) = \max(0, z)$:
 
-![Skip Connections](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Figures/skip-connections.png)
+![Skip Connections](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Figures/skip-connection.png)
 
 
 $$z_1 = W_1 \cdot a_0 + b_1$$
