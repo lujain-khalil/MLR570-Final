@@ -90,7 +90,7 @@ The inception module can be explained by the following example (using Same Convo
 - Skip connections achieves the following:
    - **Solves Vanishing Gradient Problem**: In very deep networks, gradients become very small (vanish) as they backpropagate through many layers. Skip connections provide an identity shortcut that allows gradients to flow directly through the network
    - **Learn Residuals**: Instead of learning the full mapping $H(x)$,the network learns a _residual function_ $F(x) = H(x) - x$
-   - **Improved Training**: Enables the training of very deep architectures (e.g., ResNet-152) without degradation in performance
+   - **Improved Training**: Enables the training of very deep architectures (e.g., ResNet-152) without degradation in performance (not caused by overfitting)
 
 Here's a visual example that uses ReLU as the activation function $f(z) = \max(0, z)$:
 
@@ -114,3 +114,4 @@ $$a_2 = f(z_2 + a_0)$$
 
 $$\implies a_2 = W_2 \cdot a_1 + b_2 + a_0$$
 
+## Recurrent Neural Networks

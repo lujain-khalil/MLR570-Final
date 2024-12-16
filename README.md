@@ -78,14 +78,15 @@ Topics covered thoroughly in recordings but not so much in the slides:
 
 - Recording 7 (Lecture 6): Normal equation derivations (OLS, WLS, and Ridge Regression)
 - Recording 9 (Lecture 7): Kernel function derivations (Polynomial, RBF, and Least Squares)
-- Recording 13 (Lecture 10): Gated RNN derivations
+- Recording 13 (Lecture 10): GRU derivations
 - Recordings 15/16 (Lecture 12): Soft clustering derivations
 
 ## Other resources 
 
 :tv: **Videos**:
 - Any video by [StatQuest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw) on YouTube
-- [ritvikmath](https://www.youtube.com/@ritvikmath) on Youtube is also good
+    - [Recurrent Neural Networks (RNNs), Clearly Explained!!!](https://www.youtube.com/watch?v=AsNTP8Kwu80)
+- Videos by [ritvikmath](https://www.youtube.com/@ritvikmath) on Youtube are also good
     - [SVM (The Math) : Data Science Concepts
     ](https://www.youtube.com/watch?v=bM4_AstaBZo&t=512s)
     - [SVM Kernels : Data Science Concepts](https://www.youtube.com/watch?v=OKFMZQyDROI&t=0s)
