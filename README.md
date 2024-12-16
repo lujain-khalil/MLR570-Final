@@ -13,11 +13,11 @@ These include written summaries of the lectures. Trying my best to catch anythin
     - [Lecture 7 - Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%207.md) \[Completed :heavy_check_mark:\]
     - [Lecture 8 - k-Nearest Neighbours & Decision Trees](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%208.md) \[Completed :heavy_check_mark:\]
     - [Lecture 9 - Feed-Forward Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%209.md) \[Completed :heavy_check_mark:\]
-    - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2010.md) \\[Completed :heavy_check_mark: _Typed out notes still missing RNNs_\]
+    - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2010.md) \[Completed :heavy_check_mark: _Typed out notes still missing RNNs_\]
 - Lecture 11_12_13 UNSUPERVISED LEARNING:
-    - [Lecture 11 - Clustering]() \[Not completed :x:\]
-    - [Lecture 12 - Density Based Clustering Clustering, DBSCAN, Soft Clustering]() \[Not completed :x:\]
-    - [Lecture 13 - Autoencoders]() \[Not completed :x:\]
+    - [Lecture 11 - K-Means Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2011.md) \[Completed :heavy_check_mark: _Typed out notes still missing, only Practice is complete_\]
+    - [Lecture 12 - Density Based Clustering Clustering, DBSCAN, Soft Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2012.md) \[Not completed :x:\]
+    - [Lecture 13 - Autoencoders](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2013.md) \[Not completed :x:\]
     
 ## Homeworks
 
@@ -50,9 +50,9 @@ Just a compilation of the slides posted on iLearn with my (minimal) written comm
         - CNNs (LeNet-5, AlexNet, VGGNet, GoogleNet, ResNet)
         - RNNs (Sequence Applications, Time Steps, Model Parameters and Inputs, Vanishing Gradient Problem)
 - Lecture 11_12_13 UNSUPERVISED LEARNING:
-    - [Lecture 11 - K-Means Clustering, K-Medoids Clustering]()
-    - [Lecture 12 - K-Means Clustering, DBSCAN, Soft Clustering]()
-    - [Lecture 13 - Autoencoders]()
+    - [Lecture 11 - K-Means Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2011.pdf): Clustering, k-means++, kernel k-NN, k-mediods
+    - [Lecture 12 - K-Means Clustering, DBSCAN, Soft Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2012.pdf)
+    - [Lecture 13 - Autoencoders](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2013.pdf)
 
 ## Overview of recordings
 Thanks Alaa <3
