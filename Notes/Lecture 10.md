@@ -115,3 +115,95 @@ $$a_2 = f(z_2 + a_0)$$
 $$\implies a_2 = W_2 \cdot a_1 + b_2 + a_0$$
 
 ## Recurrent Neural Networks
+
+RNNs model sequential data while retaining memory of past inputs. Hidden states allow information to flow across time steps. In FNNs, the input flows only forward. In RNNs, input also flows forward, but hidden states also depend on previous states.
+
+| Type            | Input            | Output           | Example                  |
+|-----------------|------------------|------------------|--------------------------|
+| One-to-Many     | Fixed-size       | Sequence         | Image captioning         |
+| Many-to-One     | Sequence         | Fixed-size       | Sentiment analysis       |
+| Many-to-Many    | Sequence         | Sequence         | Language translation     |
+
+
+### **Model Formulation**
+At each time step $t$, the hidden state $h_t$ is computed as:
+
+$$h_t = f(W_h h_{t-1} + W_x x_t + b)$$
+
+where:
+- $W_h, W_x$: Weight matrices
+- $h_{t-1}$: Hidden state from previous step
+- $x_t$: Input at current step,
+- $f(z)$: Activation function (e.g., tanh).
+
+
+### **Vanishing/Exploding Gradient Problem**
+
+Let's derive the gradient that will be used to update $W_h$. Given a loss function $L(y, \hat{y})$, gradients of the loss function $L$ are backpropagated through time:
+
+$$\frac{\partial L}{\partial W_h} = \sum_{t=1}^T \frac{\partial L}{\partial h_t} \cdot \frac{\partial h_t}{\partial W_h}$$
+
+Since $h_t$ depends recursively on $h_{t-1}$, we get repeated matrix multiplications involving $W_h$. 
+
+Using **$h_t = tanh(W_h h_{t-1} + W_x x_t + b)$:**
+
+1. Gradient at step $t$:
+   $$
+   \frac{\partial L}{\partial h_t} = \frac{\partial L}{\partial h_{t+1}} \frac{\partial h_{t+1}}{\partial h_t} \approx W_h^T \frac{\partial L}{\partial h_{t+1}}
+   $$
+2. Repeated chain rule gives:
+   $$
+   \frac{\partial L}{\partial h_0} = W_h^T W_h^T \dots W_h^T \frac{\partial L}{\partial h_T}
+   $$
+   - **If $\| W_h \| < 1$**: Gradients shrink exponentially → Vanishing gradient.
+   - **If $\| W_h \| > 1$**: Gradients explode exponentially → Exploding gradient.
+
+- **Vanishing Gradient**: Gradients shrink exponentially if $W_h$ has small eigenvalues (less than 1).
+  $$
+  \frac{\partial h_t}{\partial h_{t-1}} \approx W_h^T \quad \text{(repeated multiplications shrink values)}
+  $$
+- **Exploding Gradient**: Gradients explode if $W_h$ has large eigenvalues (greater than 1).
+
+
+### **Gated Recurrent Units (GRUs): Solving Vanishing Gradient**
+GRUs introduce **gates** to control the flow of information:
+- **Update Gate** ($z_t$): Controls how much of the past information is carried forward.
+- **Reset Gate** ($r_t$): Controls how much of the past hidden state to forget.
+
+### **GRU Equations**
+1. Update gate:
+   $$
+   z_t = \sigma(W_z x_t + U_z h_{t-1} + b_z)
+   $$
+2. Reset gate:
+   $$
+   r_t = \sigma(W_r x_t + U_r h_{t-1} + b_r)
+   $$
+3. Candidate hidden state:
+   $$
+   \tilde{h}_t = \tanh(W_h x_t + U_h (r_t \odot h_{t-1}) + b_h)
+   $$
+4. Final hidden state:
+   $$
+   h_t = z_t \odot h_{t-1} + (1 - z_t) \odot \tilde{h}_t
+   $$
+
+### **Why GRUs Solve Vanishing Gradients**
+- The **update gate** $z_t$ selectively carries forward long-term information.
+- Gradients flow through $z_t$, preventing exponential shrinking.
+
+---
+
+## **6. Key Differences Between RNNs and GRUs**
+| Feature              | RNN                            | GRU                                  |
+|----------------------|--------------------------------|--------------------------------------|
+| **Hidden State**     | $h_t = f(W_h h_{t-1} + \dots)$ | Combines candidate state $\tilde{h}_t$ and $h_{t-1}$. |
+| **Vanishing Gradient**| Present                       | Mitigated by gating mechanisms.      |
+| **Parameters**       | Fewer                         | More due to update/reset gates.      |
+| **Performance**      | Struggles with long sequences | Better for long-term dependencies.   |
+
+---
+
+## **7. Summary**
+- **RNNs** process sequential data using hidden states but face vanishing/exploding gradients due to recursive computations.
+- **GRUs** solve these issues with update/reset gates, allowing selective memory retention and better gradient flow.
