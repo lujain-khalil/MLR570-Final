@@ -126,9 +126,14 @@ RNNs model sequential data while retaining memory of past inputs. Hidden states 
 
 
 ### **Model Formulation**
-At each time step $t$, the hidden state $h_t$ is computed as:
 
-$$h_t = f(W_h h_{t-1} + W_x x_t + b)$$
+Without RNNs, a hidden state $h$ is computed as:
+
+$$h = f( W_x x_t + b)$$
+
+In RNNS, at each time step $t$, the hidden state $h_t$ is computed as:
+
+$$h_t = f(W_x x_t + b + W_h h_{t-1})$$
 
 where:
 - $W_h, W_x$: Weight matrices
@@ -139,50 +144,45 @@ where:
 
 ### **Vanishing/Exploding Gradient Problem**
 
-> _Incomplete dervations_
-
 Let's derive the gradient that will be used to update $W_h$. Given a loss function $L(y, \hat{y})$, gradients of the loss function $L$ are backpropagated through time:
 
-$$\frac{\partial L}{\partial W_h} = \sum_{t=1}^T \frac{\partial L}{\partial h_t} \cdot \frac{\partial h_t}{\partial W_h}$$
+$$\frac{\partial L}{\partial W_h} = \sum_{t=1}^T \frac{\partial L_t}{\partial W_h}$$
 
-Since $h_t$ depends recursively on $h_{t-1}$, we get repeated matrix multiplications involving $W_h$. 
+Taking the dervative at the last timestep $T$:
 
-Using **$h_t = tanh(W_h h_{t-1} + W_x x_t + b)$:**
-
-1. Gradient at step $t$:
-   $$
-   \frac{\partial L}{\partial h_t} = \frac{\partial L}{\partial h_{t+1}} \frac{\partial h_{t+1}}{\partial h_t} \approx W_h^T \frac{\partial L}{\partial h_{t+1}}
-   $$
-2. Repeated chain rule gives:
-   $$
-   \frac{\partial L}{\partial h_0} = W_h^T W_h^T \dots W_h^T \frac{\partial L}{\partial h_T}
-   $$
-   - **If $\| W_h \| < 1$**: Gradients shrink exponentially → Vanishing gradient.
-   - **If $\| W_h \| > 1$**: Gradients explode exponentially → Exploding gradient.
-
-- **Vanishing Gradient**: Gradients shrink exponentially if $W_h$ has small eigenvalues (less than 1).
-  $$
-  \frac{\partial h_t}{\partial h_{t-1}} \approx W_h^T \quad \text{(repeated multiplications shrink values)}
-  $$
-- **Exploding Gradient**: Gradients explode if $W_h$ has large eigenvalues (greater than 1).
+$$\frac{\partial L_T}{\partial W_h} = \frac{\partial L}{\partial h_T} \cdot \left( \frac{\partial h_T}{\partial h_{T-1}} \cdots \frac{\partial h_{t+1}}{\partial h_t} \right) \cdot \frac{\partial h_t}{\partial W_h}$$
 
 
-### **Gated Recurrent Units (GRUs): Solving Vanishing Gradient**
+Let's tackle $\frac{\partial h_t}{\partial h_{t-1}}$ alone:
+
+$$h_t = f(W_x x_t + b + W_h h_{t-1})$$
+
+$$\frac{\partial h_t}{\partial h_{t-1}} = f'(W_x x_t + b + W_h h_{t-1}) \cdot W_h$$
+
+We care about the $W_h$ mentioned here. For a depth of $\alpha$, we will get a $W_h^\alpha$ in the gradient. Interpreting it by its SVD:
+
+$$W_h = T \Sigma T$$
+$$W_h = T \Sigma^\alpha T$$
+
+If $\alpha$ gets too large ($\alpha \rightarrow \infty$):
+- **If $\Sigma < 1$**: Gradients shrink exponentially → Vanishing gradient.
+- **If $\Sigma > 1$**: Gradients explode exponentially → Exploding gradient.
+
 > _Incomplete dervations_
 
-GRUs introduce **gates** to control the flow of information:
+To solve the vanishing gradient problem, GRUs introduce **gates** to control the flow of information:
 - **Update Gate** ($z_t$): Controls how much of the past information is carried forward.
 - **Reset Gate** ($r_t$): Controls how much of the past hidden state to forget.
 
 **GRU Equations**
 1. Update gate:
-   $$
-   z_t = \sigma(W_z x_t + U_z h_{t-1} + b_z)
-   $$
+
+$$z_t = \sigma(W_z x_t + U_z h_{t-1} + b_z)$$
+
 2. Reset gate:
-   $$
-   r_t = \sigma(W_r x_t + U_r h_{t-1} + b_r)
-   $$
+
+$$r_t = \sigma(W_r x_t + U_r h_{t-1} + b_r)$$
+
 3. Candidate hidden state:
    $$
    \tilde{h}_t = \tanh(W_h x_t + U_h (r_t \odot h_{t-1}) + b_h)

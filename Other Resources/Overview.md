@@ -66,6 +66,12 @@ Comments about rank:
 #### Ridge Regression $\beta = (X^T X + \lambda I)^{-1} X^T y$
 - Perturbing $\lambda I$ increases the rank, avoiding chances of singularity (non-invertibility)
 
+## Lecrure 10: CNNs and RNNs
+
+### GRUs
+- $r_t$: The reset gate controls the influence of the previous hidden state $h_{t-1}$ when computing the candidate hidden state $h_{t}$
+- $z_t$: The update gate determines how much of the previous hidden state $h_{t-1}$ should be **carried forward** to the new hidden state ($h_t$)
+
 ## Lecture 12: Density Based Clustering and Soft Clustering
 
 ### DBSCAN
@@ -87,3 +93,20 @@ Comments about rank:
 - Similar to what the variational autoencoder does in the latent space
 
 > return to the autoencoder point
+
+## Lecture 13: Autoencoders
+
+### Vanilla Autoencoders
+- Dimensionality reduction using all features, not feature selection
+- To be similar to PCA, autoencoders must use linear activation functions. Otherwise, they map features differently and are no longer equivalent 
+
+### Denoising 
+- Introducing noise to the input $X + \epsilon \in \mathbb{R}^n$
+- The goal is it to minimize the reconstruction error $||X - \hat{X}||$ where $\hat{X}$ was 
+
+### Sparse Autoencoders
+- Average activations/results of a neuron across all datasets 
+- Average might not be the best representative
+- KL-Divergence
+
+### Variational Autoencoders
