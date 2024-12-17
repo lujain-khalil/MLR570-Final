@@ -15,9 +15,9 @@ These include written summaries of the lectures. Trying my best to catch anythin
     - [Lecture 9 - Feed-Forward Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%209.md) \[Completed :heavy_check_mark:\]
     - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2010.md) \[Completed :heavy_check_mark: _Typed out notes still missing RNNs_ \]
 - Lecture 11_12_13 UNSUPERVISED LEARNING:
-    - [Lecture 11 - K-Means Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2011.md) \[Completed :heavy_check_mark: _Typed out notes still missing, only Practice is complete_\]
-    - [Lecture 12 - Density Based Clustering Clustering, DBSCAN, Soft Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2012.md) \[Not completed :x:\]
-    - [Lecture 13 - Autoencoders](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2013.md) \[Not completed :x:\]
+    - [Lecture 11 - K-Means Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2011.md) \[Completed :heavy_check_mark:\]
+    - [Lecture 12 - Density Based Clustering Clustering, DBSCAN, Soft Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2012.md) \[Completed :heavy_check_mark:\]
+    - [Lecture 13 - Autoencoders](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2013.md) \[Completed :heavy_check_mark:\]
     
 ## Homeworks
 
@@ -96,3 +96,4 @@ Topics covered thoroughly in recordings but not so much in the slides:
 - [Dara's Notes](https://drive.google.com/file/d/1FJQ-zpX7paiL3XkXQ5pc9BLWV9XuwgtD/view?usp=sharing)
 - [Raghad's Notes on Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Raghad-Kernel$20Methods.pdf)
 - [Overview](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Scenarios.md) of possible questions or something 
+- [Computational Complexities](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Complexities.md)

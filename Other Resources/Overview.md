@@ -34,10 +34,11 @@
     - Batch size = 1 $\implies$ most **local** you can get
     - Batch size = Sample size $\implies$ most **global** you can get
 
+Limitations:
+- Data must sbe linearly separable 
+
 ### SVMs
 - Fails when variance is high in one class, because an unseen datapoint from the class with high variance could easily exceed the decision boundary 
-
-> did we mention anything else?
 
 ### Linear Regression
 
@@ -67,6 +68,12 @@ Comments about rank:
 - Perturbing $\lambda I$ increases the rank, avoiding chances of singularity (non-invertibility)
 
 ## Lecrure 10: CNNs and RNNs
+
+### CNNs
+
+Why are filters always an odd square ($3 \times 3$)?
+- Centered
+- Captured more information
 
 ### GRUs
 - $r_t$: The reset gate controls the influence of the previous hidden state $h_{t-1}$ when computing the candidate hidden state $h_{t}$

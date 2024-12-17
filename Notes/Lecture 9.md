@@ -75,7 +75,7 @@ $$\frac{\partial L}{\partial W} = \frac{\partial L}{\partial f(z)} \cdot \frac{\
 
 | **Optimizer**          | **Update Rule**                                                                                     | **Key Features**                       | **Advantages**                              | **Disadvantages**                       |
 |-------------------------|----------------------------------------------------------------------------------------------------|----------------------------------------|--------------------------------------------|-----------------------------------------|
-| **SGD (Stochastic Gradient Descent)** | $\theta_t = \theta_{t-1} - \eta \nabla_\theta L(\theta_{t-1})$                       | Basic gradient descent optimization    | Simple, easy to implement                  | Slow convergence, noisy updates         |
+| **SGD** | $\theta_t = \theta_{t-1} - \eta \nabla_\theta L(\theta_{t-1})$                       | Basic gradient descent optimization    | Simple, easy to implement                  | Slow convergence, noisy updates         |
 | **SGD with Momentum**  | $\theta_t = \theta_{t-1} - \eta v_t$ | Adds "momentum" term to smooth updates | Reduces oscillations, accelerates learning | Requires tuning momentum $\beta$    |
 | **Adam (Adaptive Moment Estimation)** | $\theta_t = \theta_{t-1} - \eta \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$ | Combines momentum and adaptive learning rates | Fast convergence, adaptive learning rates | Computationally expensive, more hyperparameters |
 
