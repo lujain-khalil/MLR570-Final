@@ -65,3 +65,25 @@ Comments about rank:
 
 #### Ridge Regression $\beta = (X^T X + \lambda I)^{-1} X^T y$
 - Perturbing $\lambda I$ increases the rank, avoiding chances of singularity (non-invertibility)
+
+## Lecture 12: Density Based Clustering and Soft Clustering
+
+### DBSCAN
+
+- DBSCAN better than k-means clustering because:
+    - Can classify clusters of arbitrary shapes properly
+    - Recognizes noise
+- When counting the points in the $\epsilon$ neighbourhood of a point $p$, do we count the point $p$ itself as well?
+    - Depends on the algorithm
+- It decides the number of clusters through training, unlike k-means
+- DBSCAN assumes denisty is consistent throughout the dataset (homogeneous density)
+- *H-DBSCAN* allows for varying density 
+
+### Soft Clustering
+- We're specifically studying Gaussian Mixture Model
+- If we change the distrubution assumption from Gaussian to something else, what happens?
+    - The objective changes
+    - Other distributions **might** not have a closed form solution 
+- Similar to what the variational autoencoder does in the latent space
+
+> return to the autoencoder point
