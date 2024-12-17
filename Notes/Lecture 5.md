@@ -3,7 +3,7 @@
 ## Training, Validation, and Testing
 
 - **Training Data**: Used to optimize model parameters.
-- **Validation Data**: Separate dataset to tune hyperparameters and monitor performance Evaluates generalization beyond training data. It's benefits are:
+- **Validation Data**: Separate dataset to tune hyperparameters and monitor performance. Evaluates generalization beyond training data. It's benefits are:
     - Prevents overfitting by monitoring generalization error.
     - Enables **early stopping** during training to avoid unnecessary epochs.
     - Facilitates **model selection and tuning** based on validation error.
@@ -47,6 +47,9 @@ $$ F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \
 
 **Why Harmonic Mean?** Balances disproportionate precision and recall values.
 
+**Weighted F1 Score**: If we want to put more weight to precision in F1-score:
+
+$$ F1_\beta = (1 + \beta^2) \cdot \frac{\text{Precision} \cdot \text{Recall}}{(\beta^2 \cdot \text{Precision}) + \text{Recall}} $$
 
 ## Regression Metrics
 1. **Mean Squared Error (MSE)**: Heavily penalizes large errors.

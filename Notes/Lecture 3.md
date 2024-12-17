@@ -147,6 +147,9 @@ $$I(X_j; y) = \sum_{X, Y} p(x, y) \log \frac{p(x, y)}{p(x)p(y)}$$
     
 
 ### **Wrapper Methods**
+
+"Wrapped" by a model:
+
 - **Recursive Feature Elimination (RFE)**: Iteratively removes least important features based on model importance.
 - **Forward Feature Selection**: Starts with no features, adds features one by one, maximizing performance at each step.
 

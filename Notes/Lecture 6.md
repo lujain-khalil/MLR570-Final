@@ -64,7 +64,7 @@ Since we're defining the margin to be one unit away on either side of the bounda
 
 $$\text{Margin Width} = 2 \times \frac{1}{||w||} = \frac{2}{||w||}$$
 
-The goal for SVM's is to minimize margin width w.r.t $w$. In other words, the pptimization problem is formulated as:
+The goal for SVM's is to minimize margin width w.r.t $w$. In other words, the optimization problem is formulated as:
 
 $$\min_{w} \frac{1}{2} ||w||^2$$
 

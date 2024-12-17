@@ -95,3 +95,4 @@ Topics covered thoroughly in recordings but not so much in the slides:
 :page_with_curl: **Other notes**
 - [Dara's Notes](https://drive.google.com/file/d/1FJQ-zpX7paiL3XkXQ5pc9BLWV9XuwgtD/view?usp=sharing)
 - [Raghad's Notes on Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Raghad-Kernel$20Methods.pdf)
+- [Overview](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Scenarios.md) of possible questions or something 
