@@ -7,7 +7,12 @@ Linear classifiers fail for non-linearly separable data. To address this, **tran
 
 Example transformation for $x = [x_1, x_2]$:
 
-$$\phi(x) = \begin{bmatrix} x_1 \\ x_2 \\ x_1^2 + x_2^2 \end{bmatrix} \in \mathbb{R}^3$$
+$$\phi(x) = 
+    \begin{bmatrix} 
+        x_1 \\ 
+        x_2 \\ 
+        x_1^2 + x_2^2 \\
+    \end{bmatrix} \in \mathbb{R}^3$$
 
 The original prediction function $f(x) = \text{sign}(w \cdot x)$ is now :
 
@@ -39,7 +44,7 @@ Common kernels compute this efficiently without explicitly calculating $\phi(x)$
 ### **1. Polynomial Kernel**
 Maps data into a higher $d$-dimensional space using polynomial terms. Polynomial kernels are suitable for data with interactions between features. The mapping function $\phi : \mathbb{R}^{n} \rightarrow \mathbb{R}^{d}$ s.t. $d > n$ is defined as follows:
 
-$$\phi(x) = {\left[\frac{\sqrt{d!}}{\sqrt{j_1! j_2! \dots j_{n+1}!}} x_1^{j_1} \dots x_n^{j_n} 1^{j_{n+1}} \right]}_{j_1 + j_2 + \dots + j_{n+1} = d}$$
+$$\phi(x) = {\left[\frac{\sqrt{d!}}{\sqrt{j_1! j_2! \dots j_{n+1}!}} x_1^{j_1} \dots x_n^{j_n} 1^{j_{n+1}} \right]}\_{j_1 + j_2 + \dots + j_{n+1} = d}$$
 
 The equation above is used to compute each term in the polynomial, where each term used a different combination of $j$'s that satsify the constraint $\sum_{i = 1}^{n+1} j_i = d$
 
@@ -107,7 +112,7 @@ $$\beta = (\phi(X)^{\top} \phi(X) + \lambda I)^{-1} \phi(X)^{\top} y$$
 - **Complex Patterns**: Might fail to capture intricate relationships.
 - **Overfitting**: Flexible kernels can overfit noisy datasets.
 - **Curse of Dimensionality**: Performance degrades in very high-dimensional spaces.
-- **Parameter Tuning**: Selecting the right kernel and tuning parameters (e.g.,  $ \sigma  $ in RBF) can be challenging.
+- **Parameter Tuning**: Selecting the right kernel and tuning parameters (e.g.,  $\sigma$ in RBF) can be challenging.
 
  
 
