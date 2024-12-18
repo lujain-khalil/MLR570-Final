@@ -34,7 +34,7 @@ $$ C_i \cap C_j = \emptyset \, (i \neq j) $$
 2. Randomly select initial centroids $z_1, \dots, z_k$.
 3. Assign each data point $x_i$ to the nearest centroid $z_j$:
 
-$$ \argmin_{j=1,\dots,k} ||x_i - z_j||^2_2 $$
+$$ \text{arg}\min_{j=1,\dots,k} ||x_i - z_j||^2_2 $$
 
 4.  Update centroids:
 
@@ -96,11 +96,11 @@ $$z_j = \frac{\sum_{t \in C_j} \phi(x_t)}{|C_j|}$$
 
 Substitute into the distance equation:
 
-$$\|\phi(x_i) - z_j\|_2^2 = \phi(x_i)^T \phi(x_i) - 2 \phi(x_i)^T \frac{\sum_{t \in C_j} \phi(x_t)}{|C_j|} + \frac{\sum_{t \in C_j} \phi(x_t)^T \phi(x_t)}{|C_j|^2}$$
+$$\|\phi(x_i) - z_j\|\_2^2 = \phi(x_i)^T \phi(x_i) - 2 \phi(x_i)^T \frac{\sum_{t \in C_j} \phi(x_t)}{|C_j|} + \frac{\sum_{t \in C_j} \phi(x_t)^T \phi(x_t)}{|C_j|^2}$$
 
 Final Simplified Form:
 
-$$\|\phi(x_i) - z_j\|_2^2 = \phi(x_i)^T \phi(x_i) - 2 \frac{\sum_{t \in C_j} \phi(x_i)^T \phi(x_t)}{|C_j|} + \frac{\sum_{t \in C_j} \phi(x_t)^T \phi(x_t)}{|C_j|^2}$$
+$$\|\phi(x_i) - z_j\|\_2^2 = \phi(x_i)^T \phi(x_i) - 2 \frac{\sum_{t \in C_j} \phi(x_i)^T \phi(x_t)}{|C_j|} + \frac{\sum_{t \in C_j} \phi(x_t)^T \phi(x_t)}{|C_j|^2}$$
 
 ### Kernel Trick:
 The dot products $\phi(x_i)^T \phi(x_t)$ can be replaced with the kernel function $K(x_i, x_t)$:
