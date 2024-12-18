@@ -168,8 +168,6 @@ If $\alpha$ gets too large ($\alpha \rightarrow \infty$):
 - **If $\Sigma < 1$**: Gradients shrink exponentially → Vanishing gradient.
 - **If $\Sigma > 1$**: Gradients explode exponentially → Exploding gradient.
 
-> _Incomplete dervations_
-
 To solve the vanishing gradient problem, GRUs introduce **gates** to control the flow of information:
 - **Update Gate** ($z_t$): Controls how much of the past information is carried forward.
 - **Reset Gate** ($r_t$): Controls how much of the past hidden state to forget.
@@ -184,13 +182,12 @@ $$z_t = \sigma(W_z x_t + U_z h_{t-1} + b_z)$$
 $$r_t = \sigma(W_r x_t + U_r h_{t-1} + b_r)$$
 
 3. Candidate hidden state:
-   $$
-   \tilde{h}_t = \tanh(W_h x_t + U_h (r_t \odot h_{t-1}) + b_h)
-   $$
-4. Final hidden state:
-   $$
-   h_t = z_t \odot h_{t-1} + (1 - z_t) \odot \tilde{h}_t
-   $$
+
+$$\tilde{h}\_t = \tanh(W_h x_t + U_h (r_t \odot h_{t-1}) + b_h)$$
+
+5. Final hidden state:
+
+$$h_t = z_t \odot h_{t-1} + (1 - z_t) \odot \tilde{h}_t$$
 
 **Why GRUs Solve Vanishing Gradients**
 - The **update gate** $z_t$ selectively carries forward long-term information.
