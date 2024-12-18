@@ -16,8 +16,8 @@ Handwritten documents practicing any potential mathematical derivations/problems
     - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2010.md) \[Completed :heavy_check_mark: \]
 - Lecture 11_12_13 UNSUPERVISED LEARNING:
     - [Lecture 11 - K-Means Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2011.md) \[Completed :heavy_check_mark:\]
-    - [Lecture 12 - DBSCAN, Soft Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2012.md) \[Completed :heavy_check_mark:\]
-    - [Lecture 13 - Autoencoders](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2013.md) \[Completed :heavy_check_mark:\]
+    - [Lecture 12 - DBSCAN, Soft Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Practice/Lecture%2012.pdf) \[Completed (Practice document only) :heavy_check_mark:\]
+    - [Lecture 13 - Autoencoders](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Practice/Lecture%2013.md) \[Completed (Practice document only) :heavy_check_mark:\]
     
 ## Homeworks
 
