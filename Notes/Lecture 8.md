@@ -10,8 +10,8 @@
 ### Distance Metrics:
 | Metric              | Formula                                   |
 |---------------------|-------------------------------------------|
-| Euclidean Distance  | $ d(x_q, x_i) = \sqrt{\sum_{j=1}^n (x_{qj} - x_{ij})^2} $ |
-| Manhattan Distance  | $ d(x_q, x_i) = \sum_{j=1}^n |x_{qj} - x_{ij}| $         |
+| Euclidean Distance  | $d(x_q, x_i) = \sqrt{\sum_{j=1}^n (x_{qj} - x_{ij})^2}$ |
+| Manhattan Distance  | $d(x_q, x_i) = \sum_{j=1}^n \|x_{qj} - x_{ij}\|$         |
 
 ---
 
@@ -28,13 +28,13 @@ $$\hat{y}_q = \text{mode}(\{y_1, y_2, \dots, y_k\})$$
 
 ### k-NN for Regression
 
-Predicted value is the mean of $k$-nearest neighbors:
+The predicted value is the mean of $k$-nearest neighbors:
 
-$$\hat{y}_q = \frac{1}{k} \sum_{i=1}^{k} y_i$$
+$$\hat{y}\_q = \frac{1}{k} \sum_{i=1}^{k} y_i$$
 
-To improve performance, predicted value could also be the weighted mean of $k$-nearest neighbors:
+To improve performance, the predicted value could also be the weighted mean of $k$-nearest neighbors:
 
-$$\hat{y}_q = \frac{\sum_{i=1}^k w_i y_i}{\sum_{i=1}^k w_i}, \quad \text{where } w_i = \frac{1}{d(x_q, x_i)}$$
+$$\hat{y}\_q = \frac{\sum_{i=1}^k w_i y_i}{\sum_{i=1}^k w_i}, \quad \text{where } w_i = \frac{1}{d(x_q, x_i)}$$
 
 The denominator $\sum_{i=1}^k w_i$ is to scale the weights. 
 
@@ -43,8 +43,8 @@ The denominator $\sum_{i=1}^k w_i$ is to scale the weights.
 - High $k$ values could cause underfitting
 - Low $k$ values could cause overfitting
 - **Elbow method** for choosing $k$:
-  - Plot error as a function of $ k $.
-  - Choose $ k $ at the "elbow point," where error stops decreasing significantly.
+  - Plot error as a function of $k$.
+  - Choose $k$ at the "elbow point," where error stops decreasing significantly.
 
 
 ### Limitations of k-NN
@@ -67,7 +67,7 @@ The denominator $\sum_{i=1}^k w_i$ is to scale the weights.
 ### Splitting Criteria
 1. **Information Gain (ID3)**
 
-The goal is to maximize information gain by calculating the change in (shannon) entropy after a split.
+The goal is to maximize information gain by calculating the change in (Shannon) entropy after a split.
 
 $$\text{Entropy: } H(t) = -\sum_{i=1}^C p_i \log_2(p_i)$$
 
@@ -118,6 +118,6 @@ where $q \in \mathbb{R}$, $t$ is the node, $C$ is the number of classes, $p_i$ i
 |----------------------------|-----------------------------------|----------------------------------|
 | **Type**                   | Non-parametric, lazy learner     | Parametric, model-based          |
 | **Training Complexity**    | None                             | Depends on tree depth            |
-| **Prediction Complexity**  | $ O(N \cdot n) $               | $ O(\text{log}_2N) $            |
+| **Prediction Complexity**  | $O(N \cdot n)$               | $O(\text{log}_2N)$            |
 | **Interpretability**       | Low                              | High                             |
-| **Overfitting**            | Common for small $ k $         | Prevented via pruning            |
+| **Overfitting**            | Common for small $k$         | Prevented via pruning            |
