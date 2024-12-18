@@ -2,7 +2,7 @@
 This repository compiles resources that could be useful in preparations for the MLR 570 final exam.
 
 ## Notes 
-These include written summaries of the lectures. Trying my best to catch anything mentioned in the recording but not the slides. There's also handwritten documents practicing any potential mathematical drivations/problems in the [Notes/Practice/](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Practice) directory.
+Handwritten documents practicing any potential mathematical derivations/problems can be found in the [Notes/Practice/](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Practice) directory.
 
 - [Lecture 2 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%202.md) \[Completed :heavy_check_mark:\]
 - [Lecture 3 - DATA PREPROCESSING](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%203.md) \[Completed :heavy_check_mark:\]
@@ -13,10 +13,10 @@ These include written summaries of the lectures. Trying my best to catch anythin
     - [Lecture 7 - Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%207.md) \[Completed :heavy_check_mark:\]
     - [Lecture 8 - k-Nearest Neighbours & Decision Trees](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%208.md) \[Completed :heavy_check_mark:\]
     - [Lecture 9 - Feed-Forward Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%209.md) \[Completed :heavy_check_mark:\]
-    - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2010.md) \[Completed :heavy_check_mark: _Typed out notes still missing RNNs_ \]
+    - [Lecture 10 - Convolutional & Recurrent Neural Networks](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2010.md) \[Completed :heavy_check_mark: \]
 - Lecture 11_12_13 UNSUPERVISED LEARNING:
     - [Lecture 11 - K-Means Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2011.md) \[Completed :heavy_check_mark:\]
-    - [Lecture 12 - Density Based Clustering Clustering, DBSCAN, Soft Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2012.md) \[Completed :heavy_check_mark:\]
+    - [Lecture 12 - DBSCAN, Soft Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2012.md) \[Completed :heavy_check_mark:\]
     - [Lecture 13 - Autoencoders](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Lecture%2013.md) \[Completed :heavy_check_mark:\]
     
 ## Homeworks
@@ -51,7 +51,7 @@ Just a compilation of the slides posted on iLearn with my (minimal) written comm
         - RNNs (Sequence Applications, Time Steps, Model Parameters and Inputs, Vanishing Gradient Problem)
 - Lecture 11_12_13 UNSUPERVISED LEARNING:
     - [Lecture 11 - K-Means Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2011.pdf): Clustering, k-means++, kernel k-NN, k-mediods
-    - [Lecture 12 - K-Means Clustering, DBSCAN, Soft Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2012.pdf)
+    - [Lecture 12 - DBSCAN, Soft Clustering](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2012.pdf)
     - [Lecture 13 - Autoencoders](https://github.com/lujain-khalil/MLR570-Final/blob/main/Lecture%20Slides/Lecture%2013.pdf)
 
 ## Overview of recordings
@@ -95,5 +95,4 @@ Topics covered thoroughly in recordings but not so much in the slides:
 :page_with_curl: **Other notes**
 - [Dara's Notes](https://drive.google.com/file/d/1FJQ-zpX7paiL3XkXQ5pc9BLWV9XuwgtD/view?usp=sharing)
 - [Raghad's Notes on Kernel Methods](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Raghad-Kernel$20Methods.pdf)
-- [Overview](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Scenarios.md) of possible questions or something 
-- [Computational Complexities](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Complexities.md)
+- [Overview](https://github.com/lujain-khalil/MLR570-Final/blob/main/Other%20Resources/Scenarios.md)
