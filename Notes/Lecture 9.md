@@ -1,8 +1,8 @@
 # Lecture 9: Feedforward Neural Networks (FNNs)
 
-Neural networks learn a mapping function $ f: X \to Y $ where:
-- **Classification**: $ Y $ is discrete (e.g., $ Y \in \{1, 2, \dots, k\} $).
-- **Regression**: $ Y $ is continuous (e.g., $ Y \in \mathbb{R} $).
+Neural networks learn a mapping function $f: X \to Y$ where:
+- **Classification**: $Y$ is discrete (e.g., $Y \in \{1, 2, \dots, k\}$).
+- **Regression**: $Y$ is continuous (e.g., $Y \in \mathbb{R}$).
 
 | Component            | Description                                                                 |
 |-----------------------|---------------------------------------------------------------------------|
@@ -15,13 +15,13 @@ Neural networks learn a mapping function $ f: X \to Y $ where:
 ## Forward Propagation
 
 ### Classification Example:
-For input $ X = [X_1, X_2, X_3] $, activations $ a $ and outputs $ o $, any hidden layer result is as follows:
+For input $X = [X_1, X_2, X_3]$, activations $a$ and outputs $o$, any hidden layer result is as follows:
 
 $$a_1 = f(W_1 X + b_1)$$
 
 where:
-- $ W_1 \in \mathbb{R}^{1 \times 3} $
-- $ b_1 \in \mathbb{R} $
+- $W_1 \in \mathbb{R}^{1 \times 3}$
+- $b_1 \in \mathbb{R}$
 - $f(z)$: Activation (e.g., ReLU, Sigmoid, Tanh) ($z = W_1 X + b_1$)
 
 Using softmax for multi-class classification as an example, the output layer predictions are calculated as:
@@ -30,7 +30,7 @@ $$o_i = f(z) = \frac{e^z}{\sum_j e^z}$$
 
 
 ### Regression Example:
-Similar to classification, for any input $ X = [X_1, X_2, X_3] $, activations $ a $ and outputs $ o $, any hidden layer result is as follows:
+Similar to classification, for any input $X = [X_1, X_2, X_3] $, activations $a$ and outputs $o$, any hidden layer result is as follows:
    
 $$a_1 = f(W_1 X + b_1)$$
 
@@ -51,9 +51,9 @@ $$o_i = f(z) = \text{max}(0, z)$$
 
 | **Function**          | **Formula**                      | **Advantages**                                | **Disadvantages**                          |
 |------------------------|----------------------------------|----------------------------------------------|--------------------------------------------|
-| **Sigmoid**            | $ f(x) = \frac{1}{1 + e^{-x}} $ | Smooth gradient, output between $ [0, 1] $  | Vanishing gradient for large/small inputs. |
-| **Tanh**               | $ f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} $ | Zero-centered, faster convergence            | Still suffers from vanishing gradients.    |
-| **ReLU**               | $ f(x) = \max(0, x) $         | Solves vanishing gradient for positive values| Dead neurons, potential gradient explosion.|
+| **Sigmoid**            | $f(x) = \frac{1}{1 + e^{-x}}$ | Smooth gradient, output between $ [0, 1] $  | Vanishing gradient for large/small inputs. |
+| **Tanh**               | $f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}$ | Zero-centered, faster convergence            | Still suffers from vanishing gradients.    |
+| **ReLU**               | $f(x) = \max(0, x)$         | Solves vanishing gradient for positive values| Dead neurons, potential gradient explosion.|
 
 ## Backward Propagation
 
