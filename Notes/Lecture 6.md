@@ -38,7 +38,7 @@ where $\eta$ is the learning rate.
 
 ### **Algorithm**
 
-Weights and biases are updated iteratively based on misclassified points. A detailed example is given in the practice notes [here](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Practice/Lecture%202.pdf).
+Weights and biases are updated iteratively based on misclassified points. A detailed example is given in the practice notes [here](https://github.com/lujain-khalil/MLR570-Final/blob/main/Notes/Practice/Lecture%206.pdf).
 
 1. Initialize $w$ and $b$. Could be $0$'s or random or whatever
 2. Evaluate $f(x) = \text{sign}(w \cdot x_0 + b)$
